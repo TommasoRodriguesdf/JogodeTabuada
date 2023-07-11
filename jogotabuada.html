@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>Jogo de Tabuada</h1>
+     <script src="assets/jogotabuada.js"></script>
+     <meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha(){
+
+        document.write("<br>");
+    document.write("<br>");
+
+    }
+
+    function mostra(frase){
+
+        document.write(frase);
+        pulaLinha();
+}   
+
+    function escreveTabuada(negocio){
+
+        document.write("Tabuada do " + negocio + "<br> <br>");
+ }
+
+    function mostraTabuada(coisa){
+
+        document.write(coisa + "<br> <br>");
+}
+
+    for (var multiplicante = 1; multiplicante <= 10; multiplicante++){
+
+        for(var coluna = 1; coluna <= 10; coluna ++){
+
+            document.write("Tabuada do " + multiplicante);
+
+        }   
+
+        for(var multiplicador = 1; multiplicador <= 10; multiplicador++){
+
+            mostraTabuada(multiplicante * multiplicador);
+
+        } 
+
+    }
+
+</script>
+
+</body>
+</html>
